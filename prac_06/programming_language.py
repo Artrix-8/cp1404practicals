@@ -1,5 +1,3 @@
-"""yep"""
-
 
 class ProgrammingLanguage:
     """Represents a Programming Language."""
