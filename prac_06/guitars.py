@@ -1,4 +1,4 @@
-"""yep"""
+"""Program for listing out details for user inputted Guitars <(' '<)"""
 
 from prac_06.guitar import Guitar
 
