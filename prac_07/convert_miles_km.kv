@@ -3,14 +3,20 @@ BoxLayout
     BoxLayout
         orientation: 'horizontal'
         TextInput:
-            text: ''
+            id: user_input
+            text: '34'
+            multiline: False
+            on_text_validate: app.handle_calculate(user_input.text)
         BoxLayout
             orientation: 'vertical'
             Button:
                 text: 'Up'
+                on_press: app.handle_increment(user_input.text, 1)
             Button:
                 text: 'Down'
-    Button:
-        text: 'Convert miles to km'
+                on_press: app.handle_increment(user_input.text, -1)
+#    Button:
+#        text: 'Convert miles to km'
+#        on_press: app.handle_calculate(user_input.text)
     Label:
-        text: ''
+        text: app.output_km
