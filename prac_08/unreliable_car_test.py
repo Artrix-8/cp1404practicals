@@ -26,4 +26,6 @@ def main():
     # print the final states of the cars
     print(good_car)
     print(bad_car)
+
+
 main()
